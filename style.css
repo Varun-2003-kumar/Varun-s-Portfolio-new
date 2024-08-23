@@ -1,0 +1,156 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.logo a {
+    color: #00ffdd;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav__content ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav__content ul li {
+    margin-left: 2rem;
+}
+.nav__content ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.nav__content ul li a:hover, .nav__content ul li a.active {
+    color: #00ffdd;
+}
+section {
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+}
+.section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #00ffdd;
+    text-shadow: 0 0 5px #00ffdd, 0 0 10px #00ffdd;
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+}
+.description {
+    font-size: 1rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+.image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid #00ffdd;
+    box-shadow: 0 0 20px #00ffdd;
+}
+.action__btns .portfolio {
+    background-color: #00ffdd;
+    color: #121212;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem 0;
+    box-shadow: 0 0 15px #00ffdd;
+}
+.action__btns .portfolio:hover {
+    background-color: #121212;
+    color: #00ffdd;
+}
+.skills, .section ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li, .section ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #f0f0f0;
+}
+.section h2 {
+    color: #00ffdd;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 0 0 5px #00ffdd, 0 0 10px #00ffdd;
+}
+.education h2 {
+    color: #00ffdd;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 0 0 5px #00ffdd, 0 0 10px #00ffdd;
+}
+.certifications h2 {
+    color: #00ffdd;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 0 0 5px #00ffdd, 0 0 10px #00ffdd;
+}
+.resumre h3 {
+    color: #00ffdd;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 0 0 5px #00ffdd, 0 0 10px #00ffdd;
+}
+.section h3 {
+    color: #00ffdd;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 0 0 5px #00ffdd, 0 0 10px #00ffdd;
+}
+.section h4 {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.contact a {
+    color: #00ffdd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact a:hover {
+    color: #f0f0f0;
+}
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.slide {
+    animation: slideIn 1s ease-in-out;
+}
